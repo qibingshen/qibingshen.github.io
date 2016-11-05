@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2016-11-05T16:00:22.402Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/archives/index-1.html</loc>
+    
+    <lastmod>2016-11-05T15:59:55.610Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/commonweal/index.html</loc>
+    
+    <lastmod>2016-11-05T15:59:23.280Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/archives/index.html</loc>
+    
+    <lastmod>2016-11-05T15:59:06.305Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2016-11-05T15:58:54.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2016-11-05T15:58:20.077Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/11/03/hello-world/</loc>
     
     <lastmod>2016-11-03T15:03:59.634Z</lastmod>
