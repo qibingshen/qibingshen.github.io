@@ -86,12 +86,15 @@
 
 
 
+<meta name="description" content="分享前端技术 整理学习笔记">
 <meta property="og:type" content="website">
 <meta property="og:title" content="河北-齐哥">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="河北-齐哥">
+<meta property="og:description" content="分享前端技术 整理学习笔记">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="河北-齐哥">
+<meta name="twitter:description" content="分享前端技术 整理学习笔记">
 
 
 
@@ -162,7 +165,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle"></p>
+  <p class="site-subtitle">随笔 分享 笔记</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -273,6 +276,144 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/06/搭建博客-Github-Pages和Hexo简明教程/" itemprop="url">
+                  搭建博客--Github Pages和Hexo简明教程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-06T17:38:35+08:00" content="2016-11-06">
+              2016-11-06
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#搭建博客–Github Pages和Hexo教程</p>
+<p>##一、Gitub的优点</p>
+<ul>
+<li>GitHub是基于git实现的代码托管。git可能是目前最好用的版本控制系统了，非常受欢迎。</li>
+<li>GitHub可以免费使用，并且快速稳定。</li>
+<li>Github上面的世界很精彩，用久了你的眼界会开阔很多。</li>
+</ul>
+<h2 id="推荐Git教程"><a href="#推荐Git教程" class="headerlink" title="推荐Git教程"></a>推荐Git教程</h2><ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="external">廖雪峰git教程</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="external">阮一峰git教程</a></li>
+</ul>
+<p>##二、什么是Gitub Pages</p>
+<ul>
+<li>Github Pages可以被认为是用户编写的、托管在github上的静态网页。</li>
+<li><a href="https://pages.github.com/" target="_blank" rel="external">pages官网</a></li>
+</ul>
+<p>##依赖环境</p>
+<ul>
+<li>node.js相信很多人都会node.js有过了解了，直接到<a href="https://nodejs.org/en/download/" target="_blank" rel="external">官网</a>下载安装即可，安装过程直接next就可以无需配置环境变量也</li>
+<li>git直接下载安装就行<a href="https://git-scm.com/downloads" target="_blank" rel="external">下载地址</a></li>
+</ul>
+<p>##Hexo<br>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p>##一、Hexo安装</p>
+<ul>
+<li>桌面右键鼠标，点击Git Bash Here，输入npm命令即可安装</li>
+<li>npm install -g hexo </li>
+<li>假如网络环境不好可以通过安装cnpm，更换taobao的npm源重新尝试安装</li>
+</ul>
+<p>##Hexo初始化配置</p>
+<ul>
+<li>创建Hexo文件夹，目录根据自己的爱好（如：D:\Hexo）</li>
+<li><p>进入目录然后右键鼠标点击Git Bash Here，执行</p>
+<blockquote>
+<p>$ hexo init</p>
+<p>$ npm install<br>##安装Hexo插件<br>  npm install hexo-generator-index –save<br>  npm install hexo-generator-archive –save<br>  npm install hexo-generator-category –save<br>  npm install hexo-generator-tag –save<br>  npm install hexo-server –save<br>  npm install hexo-deployer-git –save<br>  npm install hexo-deployer-heroku –save<br>  npm install hexo-deployer-rsync –save<br>  npm install hexo-deployer-openshift –save<br>  npm install hexo-renderer-marked@0.2 –save<br>  npm install hexo-renderer-stylus@0.2 –save<br>  npm install hexo-generator-feed@1 –save<br>  npm install hexo-generator-sitemap@1 –save<br>##本地查看效果<br>  hexo generate<br>  hexo server</p>
+</blockquote>
+</li>
+</ul>
+<p>##将博客部署到Github Pages上<br>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。但是Github Pages的代码就是寄存在Github上面的。那么接下来我们需要在Github上面创建一个新的项目。</p>
+<p>##参考资料</p>
+<ol>
+<li><a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">如何搭建一个独立博客——简明 Github Pages与 jekyll 教程</a></li>
+<li><a href="http://www.jianshu.com/p/15ae47eddc56" target="_blank" rel="external">小白简书教程</a></li>
+<li><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="external">Markdown入门手册中文版</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -790,12 +931,12 @@ $().extend(&apos;animate&apos;, function(json){
                src="/images/avtar.png"
                alt="河北-齐哥" />
           <p class="site-author-name" itemprop="name">河北-齐哥</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+          <p class="site-description motion-element" itemprop="description">分享前端技术 整理学习笔记</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
